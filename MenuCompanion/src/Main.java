@@ -3,11 +3,12 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        // ---- Dish 1: Buffalo burrata with chutney ----
+      /*  // ---- Dish 1: Buffalo burrata with chutney ----
         HashMap<String, String> burrataNames = new HashMap<>();
         HashMap<String, String> burrataDescriptions = new HashMap<>();
         Set<String> burrataAllergens = new HashSet<>();
@@ -79,6 +80,19 @@ public class Main {
         for (Dish a : menu) {
             System.out.println(a);
             System.out.println();
+        }*/
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("dishes.txt"));
+            String dishes;
+
+            while((dishes = br.readLine()) != null){
+                System.out.println(dishes);
+            }
+            br.close();
+        } catch (IOException e) {
+            System.out.println("Can't read file dishes.txt" + e.getMessage());
         }
+
     }
 }
