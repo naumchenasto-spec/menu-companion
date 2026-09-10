@@ -6,6 +6,59 @@ import java.util.Set;
 import java.io.*;
 
 public class Main {
+
+    static List<Dish> load_dishes(String path){
+
+        List<Dish> menu = new ArrayList<>();
+        try (  BufferedReader br = new BufferedReader(new FileReader(path))){
+                //here the bufferReader is closed automatically
+            String dishes;
+
+            while((dishes = br.readLine()) != null){
+
+                if(dishes.isBlank()){
+                    continue;
+                }
+
+                String[] parts = dishes.split("\\|");
+
+                HashMap<String, String> names = new HashMap<>();
+                HashMap<String, String> descriptions = new HashMap<>();
+
+                Set<String> allergens = new HashSet<>();
+                List<String> ingredients = new ArrayList<>();
+
+                String id = parts[0];
+                String category = parts[1];
+                double price = Double.parseDouble(parts[10]);
+                for(String a : parts[9].split(",")){
+                    allergens.add(a.trim());
+                }
+
+                for(String a : parts[8].split(",")){
+                    ingredients.add(a.trim());
+                }
+
+                names.put("En", parts[2]);
+                names.put("Sq", parts[3]);
+                names.put("Mk", parts[4]);
+
+                descriptions.put("En", parts[5]);
+                descriptions.put("Sq", parts[6]);
+                descriptions.put("Mk", parts[7]);
+
+                Dish d = new Dish(id, category,names, descriptions,allergens,ingredients,price);
+
+                menu.add(d);
+            }
+        } catch (IOException e) {
+            System.out.println("Can't read file dishes.txt" + e.getMessage());
+        } catch(ArrayIndexOutOfBoundsException e){
+            System.out.println(e.getMessage());
+        }
+
+        return menu;
+    }
     public static void main(String[] args) {
 
       /*  // ---- Dish 1: Buffalo burrata with chutney ----
@@ -82,16 +135,14 @@ public class Main {
             System.out.println();
         }*/
 
-        try {
-            BufferedReader br = new BufferedReader(new FileReader("dishes.txt"));
-            String dishes;
+        List<Dish> menu = load_dishes("dishes.txt");
 
-            while((dishes = br.readLine()) != null){
-                System.out.println(dishes);
-            }
-            br.close();
-        } catch (IOException e) {
-            System.out.println("Can't read file dishes.txt" + e.getMessage());
+        System.out.println("Loaded " + menu.size() + " dishes.");
+        System.out.println();
+
+        for (Dish d : menu) {
+            System.out.println(d);
+            System.out.println();
         }
 
     }

@@ -1,3 +1,2 @@
 D001|MAIN|Trout|Trofte|Пастрмка|Fresh Trout with Chimichurri|Troftë e Freskët me Chimichurri|Свежа пастрмка со чимичури|trout,chimichuri,mixed greens|fish|15
-
 D002|Hot Appetizer|Tempura Shrimps|Karkaleca Tempura|Темпура шкампи|Shrimps coated with tempura and Deep Fried|Karkaleca deti të mbuluar me tempura dhe të skuqur thellë|Шкампи обложени со темпура и длабоко пржени|shrimps, tempura coating, sweet-chili sauce|fish|12
