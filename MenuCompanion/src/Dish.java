@@ -88,5 +88,31 @@ public class Dish {
                 " Allergens: " + getAllergens() + " Ingredients: " + getIngredients() +
                 " Name: " + getName_in_3_languages() + " Description: " + getDescription_in_3_languages();
     }
+
+    void formatingMenu(String lang){
+
+        if(lang.equalsIgnoreCase("en")){
+            System.out.println("This is one of our " + this.category);
+            System.out.println("It is  a " + this.name_in_3_languages.get("en") + ".");
+            System.out.println(this.description_in_3_languages.get("en"));
+            System.out.println("Ingredients: " + String.join(", ",this.ingredients));
+            System.out.println("Allergens: " + String.join(", ", this.allergens));
+            System.out.println("The price is: " + this.price + " Euros");
+        }else if(lang.equalsIgnoreCase("sq")){
+            System.out.println("Është një " + this.name_in_3_languages.get("sq") + ".");
+            System.out.println(this.description_in_3_languages.get("sq"));
+            System.out.println("Përbërësit: " + String.join(", ",this.ingredients));
+            System.out.println("Alergen: " + String.join(", ", this.allergens));
+            System.out.println("Çmimi është: " + this.price + " Evro");
+        }else if (lang.equalsIgnoreCase("mk")){
+            System.out.println("Е " + this.name_in_3_languages.get("mk") + ".");
+            System.out.println(this.description_in_3_languages.get("mk"));
+            System.out.println("Состојки: " + String.join(", ",this.ingredients));
+            System.out.println("Алергени: " + String.join(", ", this.allergens));
+            System.out.println("Цена: " + this.price + " евра");
+        }else{
+            System.out.println("We do not support that language");
+        }
+    }
 }
 

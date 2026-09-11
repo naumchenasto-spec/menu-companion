@@ -39,13 +39,13 @@ public class Main {
                     ingredients.add(a.trim());
                 }
 
-                names.put("En", parts[2]);
-                names.put("Sq", parts[3]);
-                names.put("Mk", parts[4]);
+                names.put("en", parts[2]);
+                names.put("sq", parts[3]);
+                names.put("mk", parts[4]);
 
-                descriptions.put("En", parts[5]);
-                descriptions.put("Sq", parts[6]);
-                descriptions.put("Mk", parts[7]);
+                descriptions.put("en", parts[5]);
+                descriptions.put("sq", parts[6]);
+                descriptions.put("mk", parts[7]);
 
                 Dish d = new Dish(id, category,names, descriptions,allergens,ingredients,price);
 
@@ -140,8 +140,10 @@ public class Main {
         System.out.println("Loaded " + menu.size() + " dishes.");
         System.out.println();
 
+        String lang = "sq";
+
         for (Dish d : menu) {
-            System.out.println(d);
+            d.formatingMenu(lang);
             System.out.println();
         }
 

@@ -6,3 +6,7 @@
 
 ### Day 3 ###
 - Today the main difficulty was understanding how to parse a String line into its proper structure, Claude Code was very helpful, but again I relay too much on it. That is something I have to change;
+
+### Day 4 ###
+
+- Today the difficulties was more on how can I achieve a better-looking and more natural representation of a menu item. My main concern is that before any day I have to ask AI to describe the task before doing it
