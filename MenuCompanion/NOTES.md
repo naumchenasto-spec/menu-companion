@@ -9,4 +9,8 @@
 
 ### Day 4 ###
 
-- Today the difficulties was more on how can I achieve a better-looking and more natural representation of a menu item. My main concern is that before any day I have to ask AI to describe the task before doing it
+- Today the difficulties was more on how can I achieve a better-looking and more natural representation of a menu item. My main concern is that before any day I have to ask AI to describe the task before doing it;
+
+### Day 5 ###
+- Today is the last day before a 6-day non-working period. Today there were no difficulties I just dealt with some syntax problems and that is it.
+ 

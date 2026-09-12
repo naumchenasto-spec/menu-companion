@@ -14,7 +14,7 @@ public class Dish {
     Dish(String id,
          String category,
          HashMap<String,String> description_by_Language,
-         HashMap<String,String> descrition3Lang,
+         HashMap<String,String> descrpition3Lang,
          Set<String> allergens,
          List<String> ingredients,
          double price){
@@ -22,22 +22,20 @@ public class Dish {
         this.id = id;
         this.category = category;
         this.name_in_3_languages =description_by_Language;
-        this.description_in_3_languages = descrition3Lang;
+        this.description_in_3_languages = descrpition3Lang;
         this.allergens = allergens;
         this.ingredients = ingredients;
         this.price = price;
     }
 
-    void addIngridients(String ingredients){
+    void addIngredients(String ingredients){
         this.ingredients.add(ingredients);
     }
     void addAllergens(String allergen){
         this.allergens.add(allergen);
     }
 
-    void addLang(String id, String name){
-        this.description_in_3_languages.put(id, name);
-    }
+    void addLang(String id, String name){this.name_in_3_languages.put(id, name);}
 
     void addDesc(String id,String description){
         this.description_in_3_languages.put(id, description);
@@ -48,16 +46,14 @@ public class Dish {
     }
 
     void setCategory(String cat){
-        this.category = category;
+        this.category = cat;
     }
 
     void setPrice(double price){
         this.price = price;
     }
 
-    List<String> getIngredients(){
-        return this.ingredients;
-    }
+    List<String> getIngredients(){return this.ingredients;}
 
     Set<String> getAllergens(){
         return this.allergens;
@@ -74,9 +70,7 @@ public class Dish {
         return this.id;
     }
 
-    String getCategory(){
-        return this.category;
-    }
+    String getCategory(){return this.category;}
 
     double getPrice(){
         return this.price;

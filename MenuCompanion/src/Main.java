@@ -14,13 +14,22 @@ public class Main {
                 //here the bufferReader is closed automatically
             String dishes;
 
+            int countLine = 0;
+
             while((dishes = br.readLine()) != null){
+
+                countLine++;
 
                 if(dishes.isBlank()){
                     continue;
                 }
 
                 String[] parts = dishes.split("\\|");
+
+                if(parts.length < 11){
+                    System.out.println("The line number "  + countLine + " is out of bounds.");
+                    continue;
+                }
 
                 HashMap<String, String> names = new HashMap<>();
                 HashMap<String, String> descriptions = new HashMap<>();
@@ -30,7 +39,19 @@ public class Main {
 
                 String id = parts[0];
                 String category = parts[1];
-                double price = Double.parseDouble(parts[10]);
+
+
+                double price;
+
+                try {
+                    price = Double.parseDouble(parts[10]);
+                } catch (NumberFormatException e) {
+                    System.out.println("Line " + countLine + ": bad price, skipping.");
+                    continue;                                    // <-- this is doing real work
+                }
+
+
+
                 for(String a : parts[9].split(",")){
                     allergens.add(a.trim());
                 }
@@ -52,9 +73,7 @@ public class Main {
                 menu.add(d);
             }
         } catch (IOException e) {
-            System.out.println("Can't read file dishes.txt" + e.getMessage());
-        } catch(ArrayIndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
+            System.out.println("Can't read file " + path + " " + e.getMessage());
         }
 
         return menu;
