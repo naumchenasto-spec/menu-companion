@@ -12,5 +12,7 @@
 - Today the difficulties was more on how can I achieve a better-looking and more natural representation of a menu item. My main concern is that before any day I have to ask AI to describe the task before doing it;
 
 ### Day 5 ###
-- Today is the last day before a 6-day non-working period. Today there were no difficulties I just dealt with some syntax problems and that is it.
+- Today is the last day before a 6-day non-working period. Today there were no difficulties I just dealt with some syntax problems and that is it;
  
+### Day 6 ###
+-Today is the first start after the 6-day break where I did a loop that later will be enhanced for better dish search. Also, Today I will encode more than 5 dishes into the dishes.txt;
