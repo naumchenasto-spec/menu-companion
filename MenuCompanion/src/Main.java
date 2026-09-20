@@ -83,25 +83,32 @@ public class Main {
 
         while(true) {
 
-            System.out.println("> ");
+            System.out.print("> ");
             String input = scanner.nextLine().trim();
 
-            System.out.println("Loaded " + menu.size() + " dishes.");
-            System.out.println();
 
-            String lang = "sq";
-
-            for (Dish d : menu) {
-                d.formatingMenu(lang);
-                System.out.println();
+            if( input.equalsIgnoreCase("quit")){
+                break;
             }
 
-            if(input.equalsIgnoreCase("quit")){
-                System.out.println("You typed " + input);
+            boolean found = false;
+            for (Dish d : menu){
+                String mkName = d.getName_in_3_languages().get("mk");
+
+                if(mkName.equalsIgnoreCase(input)){
+                    d.formatingMenu("mk");
+                    found = true;
+
+                }
             }
 
-            scanner.close();
+            if(!found){
+                System.out.println("Dish not found!");
+            }
+
         }
+
+        scanner.close();
 
     }
 }

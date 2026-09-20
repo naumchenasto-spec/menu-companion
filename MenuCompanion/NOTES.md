@@ -16,3 +16,6 @@
  
 ### Day 6 ###
 -Today is the first start after the 6-day break where I did a loop that later will be enhanced for better dish search. Also, Today I will encode more than 5 dishes into the dishes.txt;
+
+### Day 7 ###
+-Today the main difficulty was confusing equals with assigning a variable. Another difficulty was how can I extract only the Macedonian name and the use it to get all other information;  
