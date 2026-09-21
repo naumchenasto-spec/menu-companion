@@ -19,3 +19,6 @@
 
 ### Day 7 ###
 -Today the main difficulty was confusing equals with assigning a variable. Another difficulty was how can I extract only the Macedonian name and the use it to get all other information;  
+
+### Day 8 ###
+- Today the main difficulty was the logic on how should I set the specific language to each dish and find the value when there is no dish like that. Claude helped;

@@ -83,24 +83,36 @@ public class Main {
 
         while(true) {
 
-            System.out.print("> ");
+            System.out.print("Enter the name of you dish in any language or (quit) to quit: ");
             String input = scanner.nextLine().trim();
-
 
             if( input.equalsIgnoreCase("quit")){
                 break;
             }
 
             boolean found = false;
+
             for (Dish d : menu){
-                String mkName = d.getName_in_3_languages().get("mk");
 
-                if(mkName.equalsIgnoreCase(input)){
-                    d.formatingMenu("mk");
+                String matchingLang = null;
+
+                if(input.equalsIgnoreCase(d.getName_in_3_languages().get("mk"))){
+                    matchingLang = "mk";
+                }
+                else if(input.equalsIgnoreCase(d.getName_in_3_languages().get("sq"))){
+                    matchingLang = "sq";
+                }
+                else if(input.equalsIgnoreCase(d.getName_in_3_languages().get("en"))) {
+                    matchingLang = "en";
+                }
+
+                if(matchingLang != null) {
+                    d.formatingMenu(matchingLang);
                     found = true;
-
                 }
             }
+
+
 
             if(!found){
                 System.out.println("Dish not found!");
