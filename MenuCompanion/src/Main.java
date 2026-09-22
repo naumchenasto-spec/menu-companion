@@ -74,6 +74,54 @@ public class Main {
 
         return menu;
     }
+
+
+    static boolean findByName(List<Dish> menu, String name){
+
+        boolean found = false;
+        for (Dish d : menu){
+
+            String matchingLang = null;
+
+            if(name.equalsIgnoreCase(d.getName_in_3_languages().get("mk"))){
+                matchingLang = "mk";
+            }
+            else if(name.equalsIgnoreCase(d.getName_in_3_languages().get("sq"))){
+                matchingLang = "sq";
+            }
+            else if(name.equalsIgnoreCase(d.getName_in_3_languages().get("en"))) {
+                matchingLang = "en";
+            }
+
+            if(matchingLang != null) {
+                d.formatingMenu(matchingLang);
+                found = true;
+            }
+        }
+        return  found;
+    }
+
+
+    static boolean findByIngredients(List<Dish> menu, String input){
+
+        boolean found = false;
+
+        for(Dish d : menu){
+
+            for(String ingredient : d.getIngredients()){
+
+                if(ingredient.toLowerCase().contains(input.toLowerCase())){
+                    System.out.println(d.getName_in_3_languages().get("en"));
+                    found = true;
+                    break; // this prevents from printing the same dish over and over for the same allergen
+                }
+
+            }
+        }
+
+        return found;
+    }
+
     public static void main(String[] args) {
 
 
@@ -90,29 +138,11 @@ public class Main {
                 break;
             }
 
-            boolean found = false;
+            boolean found =  found = findByName(menu, input);
 
-            for (Dish d : menu){
-
-                String matchingLang = null;
-
-                if(input.equalsIgnoreCase(d.getName_in_3_languages().get("mk"))){
-                    matchingLang = "mk";
-                }
-                else if(input.equalsIgnoreCase(d.getName_in_3_languages().get("sq"))){
-                    matchingLang = "sq";
-                }
-                else if(input.equalsIgnoreCase(d.getName_in_3_languages().get("en"))) {
-                    matchingLang = "en";
-                }
-
-                if(matchingLang != null) {
-                    d.formatingMenu(matchingLang);
-                    found = true;
-                }
+            if(!found) {
+                found = findByIngredients(menu, input);
             }
-
-
 
             if(!found){
                 System.out.println("Dish not found!");
