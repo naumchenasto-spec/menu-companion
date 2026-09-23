@@ -24,4 +24,7 @@
 - Today the main difficulty was the logic on how should I set the specific language to each dish and find the value when there is no dish like that. Claude helped;
 
 ### Day 9 ###
--Today's difficulty was mainly in how I can make it possible that if I write a name to get the explanation in that lang if I type an ingredient to show what food has that Ingredient; Also there was a problem that a dish might be called more than once for the same ingredient this was solved by adding a break statement if we find a dish; 
+-Today's difficulty was mainly in how I can make it possible that if I write a name to get the explanation in that lang if I type an ingredient to show what food has that Ingredient; Also there was a problem that a dish might be called more than once for the same ingredient this was solved by adding a break statement if we find a dish;
+
+### Day 10 ###
+-Today the code logic was very easy the main difficulty is finding all the vulnerabilities of the code and trying to solve them. Claude gave me ideas and helped me solve them;

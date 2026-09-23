@@ -122,6 +122,23 @@ public class Main {
         return found;
     }
 
+
+    static boolean findByCategory(List<Dish> menu, String input){
+
+        boolean found = false;
+
+        for( Dish d : menu){
+
+            if(d.getCategory().toLowerCase().contains(input.toLowerCase())){
+                System.out.println(d.getName_in_3_languages().get("en"));
+                found = true;
+            }
+
+        }
+
+        return found;
+    }
+
     public static void main(String[] args) {
 
 
@@ -131,25 +148,79 @@ public class Main {
 
         while(true) {
 
-            System.out.print("Enter the name of you dish in any language or (quit) to quit: ");
+            System.out.print("Enter what you want to know about the menu or (quit) to quit: ");
+            if (!scanner.hasNextLine()) break;
             String input = scanner.nextLine().trim();
 
-            if( input.equalsIgnoreCase("quit")){
+            boolean found = false;
+
+            if(input.equalsIgnoreCase("quit")){
                 break;
             }
 
-            boolean found =  found = findByName(menu, input);
+            if(input.equalsIgnoreCase("name")){
 
-            if(!found) {
-                found = findByIngredients(menu, input);
+                System.out.println("Type the name:");
+
+                if (!scanner.hasNextLine()) break;
+                String newInp = scanner.nextLine().trim();
+
+                if (newInp.equalsIgnoreCase("quit")) break;
+                if (newInp.isEmpty()) {
+                    System.out.println("You didn't type anything.");
+                    continue;
+                }
+
+                found = findByName(menu, newInp);
+
+                if(!found){
+                    System.out.println("Dish not found!");
+                }
+
+            }else if(input.equalsIgnoreCase("ingredients")){
+
+                System.out.println("Type the ingredients:");
+
+                if (!scanner.hasNextLine()) break;
+                String newInp = scanner.nextLine().trim();
+
+                if (newInp.equalsIgnoreCase("quit")) break;
+                if (newInp.isEmpty()) {
+                    System.out.println("You didn't type anything.");
+                    continue;
+                }
+
+                found = findByIngredients(menu, newInp);
+
+                if(!found){
+                    System.out.println("Dish not found!");
+                }
+
+            }else if(input.equalsIgnoreCase("category")){
+
+                System.out.println("Type the category:");
+
+                if (!scanner.hasNextLine()) break;
+                String newInp = scanner.nextLine().trim();
+
+                if (newInp.equalsIgnoreCase("quit")) break;
+                if (newInp.isEmpty()) {
+                    System.out.println("You didn't type anything.");
+                    continue;
+                }
+
+                found = findByCategory(menu, newInp);
+
+                if(!found){
+                    System.out.println("Dish not found!");
+                }
+
+            }else {
+                System.out.println("This command does not exist");
             }
 
-            if(!found){
-                System.out.println("Dish not found!");
-            }
 
         }
-
         scanner.close();
 
     }
