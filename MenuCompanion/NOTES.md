@@ -15,16 +15,19 @@
 - Today is the last day before a 6-day non-working period. Today there were no difficulties I just dealt with some syntax problems and that is it;
  
 ### Day 6 ###
--Today is the first start after the 6-day break where I did a loop that later will be enhanced for better dish search. Also, Today I will encode more than 5 dishes into the dishes.txt;
+- Today is the first start after the 6-day break where I did a loop that later will be enhanced for better dish search. Also, Today I will encode more than 5 dishes into the dishes.txt;
 
 ### Day 7 ###
--Today the main difficulty was confusing equals with assigning a variable. Another difficulty was how can I extract only the Macedonian name and the use it to get all other information;  
+- Today the main difficulty was confusing equals with assigning a variable. Another difficulty was how can I extract only the Macedonian name and the use it to get all other information;  
 
 ### Day 8 ###
 - Today the main difficulty was the logic on how should I set the specific language to each dish and find the value when there is no dish like that. Claude helped;
 
 ### Day 9 ###
--Today's difficulty was mainly in how I can make it possible that if I write a name to get the explanation in that lang if I type an ingredient to show what food has that Ingredient; Also there was a problem that a dish might be called more than once for the same ingredient this was solved by adding a break statement if we find a dish;
+- Today's difficulty was mainly in how I can make it possible that if I write a name to get the explanation in that lang if I type an ingredient to show what food has that Ingredient; Also there was a problem that a dish might be called more than once for the same ingredient this was solved by adding a break statement if we find a dish;
 
 ### Day 10 ###
--Today the code logic was very easy the main difficulty is finding all the vulnerabilities of the code and trying to solve them. Claude gave me ideas and helped me solve them;
+- Today the code logic was very easy the main difficulty is finding all the vulnerabilities of the code and trying to solve them. Claude gave me ideas and helped me solve them;
+
+### Day 11 ###
+- Today was an easy day. All i had to do was add some dishes and solve some naming inconsistency in my dishes.txt file;
