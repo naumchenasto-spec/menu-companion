@@ -31,3 +31,6 @@
 
 ### Day 11 ###
 - Today was an easy day. All i had to do was add some dishes and solve some naming inconsistency in my dishes.txt file;
+
+### Day 12 ###
+- Today was very difficult for me. Firstly, I had no knowledge about packages and how to access them. Moreover, I got stuck because I did  not know that you have to make all the methods and constructors you want to use public. Finally, I understood how packages work and Claude helped me a lot;
