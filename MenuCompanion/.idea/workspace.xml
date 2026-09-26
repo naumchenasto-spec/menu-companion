@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4604e38f-7915-4344-86c2-6269bb49eed1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuCompanion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MenuCompanion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTES.md" beforeDir="false" afterPath="$PROJECT_DIR$/../NOTES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dishes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../dishes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/app/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/model/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/DishLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/storage/DishLoader.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="15" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3J3BsDzz0RgAcNvgI01endl16aF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortKey" value="BY_TIME_ASCENDING" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4604e38f-7915-4344-86c2-6269bb49eed1" name="Changes" comment="" />
+      <created>1788880080850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788880080850</updated>
+      <workItem from="1788880081992" duration="2431000" />
+      <workItem from="1788891708141" duration="2615000" />
+      <workItem from="1788894722305" duration="20000" />
+      <workItem from="1788894791080" duration="54000" />
+      <workItem from="1788894859615" duration="14000" />
+      <workItem from="1788894993951" duration="1129000" />
+      <workItem from="1788947845305" duration="3402000" />
+      <workItem from="1789031524535" duration="4628000" />
+      <workItem from="1789115604566" duration="3252000" />
+      <workItem from="1789202894626" duration="4899000" />
+      <workItem from="1789812835484" duration="2793000" />
+      <workItem from="1789899275141" duration="2949000" />
+      <workItem from="1790012444457" duration="2227000" />
+      <workItem from="1790099701321" duration="3641000" />
+      <workItem from="1790153020702" duration="3491000" />
+      <workItem from="1790253028380" duration="2669000" />
+      <workItem from="1790328194383" duration="1443000" />
+      <workItem from="1790329686117" duration="345000" />
+      <workItem from="1790330061882" duration="1923000" />
+      <workItem from="1790417509554" duration="548000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
