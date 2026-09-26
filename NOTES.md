@@ -34,3 +34,6 @@
 
 ### Day 12 ###
 - Today was very difficult for me. Firstly, I had no knowledge about packages and how to access them. Moreover, I got stuck because I did  not know that you have to make all the methods and constructors you want to use public. Finally, I understood how packages work and Claude helped me a lot;
+
+### Day 13 ###
+- Today was not that difficult. I learned to write README file, which has to contain an explanation on the code, what it has, how does it work, how to run it on your laptop and example on how should everything look;
