@@ -37,3 +37,6 @@
 
 ### Day 13 ###
 - Today was not that difficult. I learned to write README file, which has to contain an explanation on the code, what it has, how does it work, how to run it on your laptop and example on how should everything look;
+
+### Day 14 ###
+- Today I tested the code published on GitHub by cloning it into a folder and running it. There were no issues. Also, I deleated the code that I do not need in the code:
