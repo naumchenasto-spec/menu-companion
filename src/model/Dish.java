@@ -31,31 +31,6 @@ public class Dish {
         this.price = price;
     }
 
-    public void addIngredients(String ingredients){
-        this.ingredients.add(ingredients);
-    }
-    public void addAllergens(String allergen){
-        this.allergens.add(allergen);
-    }
-
-    public void addLang(String id, String name){this.name_in_3_languages.put(id, name);}
-
-    public void addDesc(String id,String description){
-        this.description_in_3_languages.put(id, description);
-    }
-
-    public void setID(String id){
-        this.id = id;
-    }
-
-    public void setCategory(String cat){
-        this.category = cat;
-    }
-
-    public void setPrice(double price){
-        this.price = price;
-    }
-
     public List<String> getIngredients(){return this.ingredients;}
 
     public Set<String> getAllergens(){return this.allergens;}
@@ -67,15 +42,7 @@ public class Dish {
         return this.description_in_3_languages;
     }
 
-    public String getId(){
-        return this.id;
-    }
-
     public String getCategory(){return this.category;}
-
-    public double getPrice(){
-        return this.price;
-    }
 
     @Override
     public String toString(){

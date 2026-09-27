@@ -48,7 +48,7 @@ public class DishLoader {
                     price = Double.parseDouble(parts[10]);
                 } catch (NumberFormatException e) {
                     System.out.println("Line " + countLine + ": bad price, skipping.");
-                    continue;                                    // <-- this is doing real work
+                    continue;
                 }
 
 

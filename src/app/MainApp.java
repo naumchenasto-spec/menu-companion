@@ -1,7 +1,6 @@
 package app;
 
 import model.Dish;
-import storage.DishLoader;
 import java.util.List;
 import java.util.Scanner;
 
