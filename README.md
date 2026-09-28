@@ -20,6 +20,7 @@ Reasons:
 
 - Before this app I had to carry a physical menu around with me, or memorise a
   30-dish menu.
+
 ---
 
 ## What it does

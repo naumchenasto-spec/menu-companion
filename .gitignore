@@ -31,3 +31,5 @@ bin/
 
 ### Removing .class file ###
 *.class
+### IntelliJ workspace state ###
+MenuCompanion/
