@@ -7,20 +7,19 @@ languages — Macedonian, Albanian and English.
 
 ## Why I built it
 
-> This program was build to ease my job as a waiter. 
-> With just one command I can get access to different dishes in three languages, and all information about them.
-> This makes it easier for me to explain the dish to the guests;
->
-> Reasons:
-> - I served to different people with different languages. Therefore,
->   I needed an app that will give me the description of each dish in a certain language;
->   
-> - It makes easier the access to necessary information like Allergens and Ingredients, which can save lives; 
-> 
-> - Before this app I had to carry a physical menu with me all the time, or
->   learn a 30-dish menu in my mind; 
->
+I built this program to make my job as a waiter easier. With one command I could
+look up a dish in three languages and everything about it, which made explaining
+a dish to a guest much faster.
 
+Reasons:
+
+- I served people who spoke different languages, so I needed something that gave me
+  the description of each dish in the language the guest was using.
+
+- It made allergens and ingredients quick to find — information that can save lives.
+
+- Before this app I had to carry a physical menu around with me, or memorise a
+  30-dish menu.
 ---
 
 ## What it does
